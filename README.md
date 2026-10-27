@@ -1,4 +1,4 @@
-# Loja Medellín Roleplay V4
+# Loja Medellín Roleplay V5 Premium
 
 Versão visual atualizada:
 - imagens diferentes nos pacotes de diamantes;
@@ -10,3 +10,7 @@ Versão visual atualizada:
 - busca e carrinho.
 
 Observação: checkout real continua dependendo da integração com um provedor de pagamento.
+
+- nova logo premium aplicada no cabeçalho e banner;
+- correção de “MEDDELLÍN” para “MEDELLÍN”;
+- correção visual dos preços de 100.000 e 300.000 diamantes para manter 200 diamantes = R$ 1,00.

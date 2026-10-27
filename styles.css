@@ -75,3 +75,78 @@ body{
 .product-card{background:rgba(22,23,24,.96);backdrop-filter:blur(8px)}
 .section-title{padding:14px 17px;border-radius:13px;background:rgba(8,9,10,.74);border:1px solid rgba(255,255,255,.05)}
 .notice{backdrop-filter:blur(8px)}
+
+
+/* V5 - identidade premium Medellín */
+:root{
+  --gold:#ffd21a;
+  --gold-deep:#b57a00;
+  --ink:#070809;
+}
+.topbar{
+  background:linear-gradient(180deg,rgba(6,7,8,.98),rgba(9,10,11,.96));
+  border-bottom:1px solid rgba(255,210,26,.15);
+  box-shadow:0 8px 28px rgba(0,0,0,.28);
+}
+.brand-mark{
+  width:60px;height:60px;padding:2px;overflow:hidden;
+  background:radial-gradient(circle at 50% 40%,#2d2300,#070707 70%);
+  border:1px solid rgba(255,210,26,.48);
+  box-shadow:0 0 28px rgba(255,196,0,.18),inset 0 0 0 1px rgba(255,255,255,.04);
+}
+.brand-mark img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+.brand b{font-size:17px;letter-spacing:.12em;text-shadow:0 0 18px rgba(255,255,255,.08)}
+.brand small{color:var(--gold);letter-spacing:.24em}
+.search{
+  background:rgba(19,20,22,.92)!important;
+  border:1px solid rgba(255,255,255,.08)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.03);
+}
+.search:focus-within{border-color:rgba(255,210,26,.45)!important;box-shadow:0 0 0 3px rgba(255,210,26,.06)}
+.cart-button{box-shadow:0 8px 24px rgba(255,196,0,.14)}
+.hero{height:470px;isolation:isolate}
+.hero-overlay{
+  background:
+  radial-gradient(circle at 24% 50%,rgba(255,193,0,.10),transparent 34%),
+  linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.42) 48%,rgba(0,0,0,.18)),
+  linear-gradient(0deg,#101112 0%,transparent 38%);
+}
+.hero-content{
+  width:min(1180px,90%);max-width:none;left:50%;transform:translate(-50%,-50%);
+  display:grid;grid-template-columns:175px minmax(0,520px);gap:28px;align-items:center;
+}
+.hero-logo{
+  width:175px;height:175px;object-fit:cover;border-radius:50%;display:block;
+  border:1px solid rgba(255,210,26,.42);
+  box-shadow:0 0 0 7px rgba(0,0,0,.26),0 18px 60px rgba(0,0,0,.55),0 0 42px rgba(255,196,0,.16);
+}
+.hero-copy{min-width:0}
+.kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid rgba(255,210,26,.22);border-radius:999px;background:rgba(0,0,0,.32)}
+.hero h1{font-size:52px;letter-spacing:-.035em;text-shadow:0 8px 28px rgba(0,0,0,.38)}
+.hero h1 em{background:linear-gradient(180deg,#ffe36d,#ffbd00);-webkit-background-clip:text;background-clip:text;color:transparent}
+.trust span{backdrop-filter:blur(8px);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.tabs{background:rgba(13,14,15,.92);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.03);border-bottom:1px solid rgba(255,210,26,.10)}
+.tabs .tab{transition:.2s ease}.tabs .tab:hover{border-color:rgba(255,210,26,.42);transform:translateY(-1px)}
+.notice{box-shadow:0 18px 50px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.03)}
+.section-title{box-shadow:0 14px 34px rgba(0,0,0,.16)}
+.product-card{border-color:rgba(255,255,255,.07);box-shadow:0 12px 36px rgba(0,0,0,.18)}
+.product-card:hover{transform:translateY(-6px);border-color:rgba(255,210,26,.40);box-shadow:0 20px 46px rgba(0,0,0,.34),0 0 30px rgba(255,196,0,.05)}
+.buy{transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}.buy:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(255,196,0,.20)}
+footer{background:linear-gradient(180deg,#0b0b0b,#060606);border-top-color:rgba(255,210,26,.10)}
+
+@media(max-width:760px){
+  .hero{height:390px}
+  .hero-content{grid-template-columns:105px minmax(0,1fr);gap:18px;width:calc(100% - 36px);left:50%;right:auto}
+  .hero-logo{width:105px;height:105px}
+  .hero h1{font-size:38px}
+  .trust{grid-template-columns:1fr 1fr;margin-top:18px}
+}
+@media(max-width:520px){
+  .brand-mark{width:48px;height:48px}
+  .hero{height:440px}
+  .hero-content{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px}
+  .hero-logo{width:88px;height:88px}
+  .hero h1{font-size:34px;margin:8px 0}
+  .hero p{font-size:13px}
+  .trust{gap:7px}.trust span{padding:8px 9px;font-size:10px}
+}
